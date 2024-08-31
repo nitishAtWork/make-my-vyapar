@@ -4,9 +4,9 @@ import SubCategoryCard from '../common/SubCategoryCard';
 import { Link } from 'react-router-dom'
 import ReadMoreOutlinedIcon from '@mui/icons-material/ReadMoreOutlined';
 
-const CategoriesSect = () => {
+const CategoriesSect2 = () => {
     return (
-        <section className='bg-gray-300 py-16'>
+        <section className='bg-gray-300 py-16 mt-5'>
             <div className="container">
                 <div className="flex flex-wrap">
                     {/* left box */}
@@ -14,7 +14,7 @@ const CategoriesSect = () => {
                         <MainCategoryCard
                             catSmTitle="Don't miss explore now"
                             catName="Categories or service name here"
-                            mainCatImg="images/category/Image-01.jpg"
+                            mainCatImg="images/category/left-cat-img.jpg"
                         />
                     </div>
                     {/* right box products */}
@@ -61,4 +61,4 @@ const CategoriesSect = () => {
     )
 }
 
-export default CategoriesSect
+export default CategoriesSect2

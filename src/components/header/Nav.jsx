@@ -107,19 +107,19 @@ const Nav = () => {
                             </div>
                         </div>
                         {/* login signup */}
-                        <div className="">
-                            <Link to="/" className="flex gap-2">
+                        <div className="mx-2">
+                            <Link to="/login" className="flex gap-2">
                                 <LoginIcon />
                                 <p>Login /</p>
                             </Link>
-                            <Link to="/" className="flex gap-2">
+                            <Link to="/signup" className="flex gap-2">
                                 <GroupAddRoundedIcon />
-                                <p>Register</p>
+                                <p>Signup</p>
                             </Link>
                         </div>
                         {/* button */}
                         <div className="">
-                            <Link to={'/'} className="py-4 px-6  rounded-[8px] bg-[red] leading-none text-white lg:flex hidden transition-all duration-300 hover:bg-[black] hover:text-white"><StorefrontOutlinedIcon className=' !h-[19px] w-[5px] -mt-[2px] leading-none ' /> EXPLORE NOW</Link>
+                            <Link to={'/'} className="py-4 px-6  rounded-[8px] bg-[red] leading-none text-white lg:flex hidden transition-all duration-300 hover:bg-[black] hover:text-white"><StorefrontOutlinedIcon className=' !h-[19px] w-[5px] -mt-[2px] leading-none ' /> EXPLORE&nbsp;NOW</Link>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ const Nav = () => {
                         <div className="2xl:w-3/12 xl:w-3/12 lg:w-3/12 md:w-4/12 w-full relative">
                             <span onClick={toggleMegaMenu} className='text-md cursor-pointer p-2 font-medium flex gap-1 items-center text-white w-fit'><MenuOpenOutlinedIcon />BROWSE CATEGORIES <KeyboardArrowRightOutlinedIcon /></span>
 
-                            <div className={menuOpen ? " absolute top-20 sm:top-14 left-0 z-40 rounded-sm p-[10px] w-full bg-[#efefed] origin-top transition-all duration-500 scale-y-100 " : " absolute top-10 left-0 z-40 rounded-sm p-[10px] w-full bg-[#efefed] origin-top transition-all duration-500 scale-y-0"}>
+                            <div className={menuOpen ? " absolute top-20 sm:top-14 md:top-20 lg:top-12 left-0 z-40 rounded-sm p-[10px] w-full bg-[#efefed] origin-top transition-all duration-500 scale-y-100 " : " absolute top-2 left-0 z-40 rounded-sm p-[10px] w-full bg-[#efefed] origin-top transition-all duration-500 scale-y-0"}>
                                 <p className='text-lg font-medium flex gap-1 items-center mb-1'><StorefrontOutlinedIcon />EXPLORE ALL CATEGORIES</p>
                                 {/* transition-all duration-300 absolute left-1 top-[55px] scale-y-0 origin-top  hover:scale-y-100 sm:relative sm:left-0 sm:top-[55px] sm:scale-y-1 sm:origin-top  sm:hover:scale-y-100 */}
                                 <ul className=' '>

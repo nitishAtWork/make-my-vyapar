@@ -7,7 +7,9 @@
   padding: 0;
   margin: 0;
 }
-
+:root{
+  --primary-clr: #fcbd04;
+}
 section,
 body {
   width: 100%;
@@ -41,7 +43,13 @@ body {
 .cat-list:nth-child(11) {
   display: block;
 }
-
+@media (max-width: 1288px) {
+.cat-list:nth-child(9),
+.cat-list:nth-child(10),
+.cat-list:nth-child(11) {
+  display: none;
+}
+}
 .cat-list:nth-child(1) ul.sub-cat {
   top: -28px;
 }
@@ -178,3 +186,80 @@ body {
     transform: translateY(0px);
   }
 }
+
+/* swiper css start */
+.swiper-pagination-bullet{
+  background: rgba(212, 210, 210, 0.902) !important;
+}
+.swiper-pagination-bullet-active{
+  background: white !important;
+}
+/* swiper css end */
+
+/* vendor tab start */
+.vendor-tab .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+  padding: 21px 25px;
+  background: var(--primary-clr);
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  transition: all 400ms ease-in-out;
+  box-shadow: 0px 0px 4px gray;
+  border-bottom: 3px solid var(--primary-clr);
+}
+@media (max-width: 768px) {
+  .vendor-tab .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    padding: 11px 11px;
+  }
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+  background: white;
+  position: relative;
+  border-bottom: 3px solid #1976d2;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected::before{
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 47%;
+  bottom: -10px;
+  width: 18px;
+  height: 18px;
+  background: #d1d5db;
+  transform: rotate(45deg);
+}
+.css-heg063-MuiTabs-flexContainer{
+  flex-wrap: wrap;
+}
+.css-1aquho2-MuiTabs-indicator{
+  display: none;
+}
+.css-19kzrtu{
+  padding: 18px 0px;
+}
+/* vendor tab end */
+
+/* Footer start */
+.ul-Link li a{
+ position: relative;
+ padding-bottom: 3px;
+ display: inline-block;
+}
+.ul-Link li a::before{
+ position: absolute;
+ content: "";
+ left: 0;
+ bottom: 1px;
+ height: 1px;
+ background: var(--primary-clr);
+ width: 0;
+ transition: all 280ms ease-in;
+}
+.ul-Link li a:hover::before{
+  width: 100%;
+}
+.Brands-slide .swiper-wrapper {
+  transition-timing-function: linear !important;
+  animation-delay: 0;
+}
+/* Footer end */
